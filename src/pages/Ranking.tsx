@@ -32,7 +32,7 @@ const hunterRankings = [
     hunterRank: 'S' as const,
     level: 40,
     gatesCleared: 45,
-    guild: 'Hunter's Guild',
+    guild: "Hunter's Guild",
   },
   {
     id: '4',
@@ -50,7 +50,7 @@ const hunterRankings = [
     hunterRank: 'A' as const,
     level: 35,
     gatesCleared: 37,
-    guild: 'Hunter's Guild',
+    guild: "Hunter's Guild",
   },
   {
     id: '6',
@@ -112,7 +112,7 @@ const guildRankings = [
   },
   {
     id: '2',
-    name: 'Hunter's Guild',
+    name: "Hunter's Guild",
     rank: 2,
     members: 45,
     avgRank: 'A',
