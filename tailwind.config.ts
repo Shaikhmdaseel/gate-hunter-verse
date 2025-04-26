@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,28 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Solo Leveling specific colors
+				hunter: {
+					'e': '#5c6ac4', // E-Rank
+					'd': '#3d8fdb', // D-Rank
+					'c': '#26c281', // C-Rank
+					'b': '#f5ab35', // B-Rank
+					'a': '#e84c3d', // A-Rank
+					's': '#9b59b6', // S-Rank
+					'nation': '#8e44ad', // National Level Hunter
+				},
+				gate: {
+					'd': '#3498db', // D-Rank Gate
+					'c': '#2ecc71', // C-Rank Gate
+					'b': '#f39c12', // B-Rank Gate
+					'a': '#c0392b', // A-Rank Gate
+					's': '#8e44ad', // S-Rank Gate
+					'danger': '#e74c3c', // Red Gate
+				},
+				shadow: '#6c5ce7', // Shadow Soldier color
+				arise: '#9b59b6', // Arise skill color
+				system: '#e74c3c', // System message color
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +106,47 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-shadow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 15px 5px rgba(108, 92, 231, 0.4)' 
+					},
+					'50%': { 
+						boxShadow: '0 0 20px 10px rgba(108, 92, 231, 0.7)' 
+					},
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)',
+					},
+					'50%': {
+						transform: 'translateY(-10px)',
+					},
+				},
+				'glow': {
+					'0%, 100%': {
+						textShadow: '0 0 10px rgba(155, 89, 182, 0.5)',
+					},
+					'50%': {
+						textShadow: '0 0 20px rgba(155, 89, 182, 0.8), 0 0 30px rgba(155, 89, 182, 0.6)',
+					},
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+					},
+					'100%': {
+						opacity: '1',
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-shadow': 'pulse-shadow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'fade-in': 'fade-in 0.5s ease-out',
 			}
 		}
 	},
